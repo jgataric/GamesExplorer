@@ -72,7 +72,8 @@ dependencies {
     implementation(libs.room.ktx)
     implementation(libs.coroutines.core)
     implementation(libs.coroutines.android)
-
+    implementation(libs.coil)
+    implementation(libs.flexbox)
 
 
     androidTestImplementation(libs.androidx.junit)

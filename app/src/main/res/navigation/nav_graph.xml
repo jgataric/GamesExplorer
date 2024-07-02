@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.gamesexplorer.ui.onboarding.IntroFragment"
+        android:label="IntroFragment"
+        tools:layout="@layout/fragment_intro">
+        <action
+            android:id="@+id/action_introFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.gamesexplorer.ui.onboarding.OnboardingFragment"
+        android:label="OnboardingFragment"
+        tools:layout="@layout/fragment_onboarding">
+        <action
+            android:id="@+id/action_onboardingFragment_to_finalFragment"
+            app:destination="@id/finalFragment" />
+        <action
+            android:id="@+id/action_onboardingFragment_to_introFragment"
+            app:destination="@id/introFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/finalFragment"
+        android:name="com.example.gamesexplorer.ui.onboarding.FinalFragment"
+        android:label="FinalFragment"
+        tools:layout="@layout/fragment_final">
+        <action
+            android:id="@+id/action_finalFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment" />
+    </fragment>
+</navigation>
